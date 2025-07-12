@@ -1,0 +1,632 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIF Travel - Pelayanan Umroh Profesional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #046A38 0%, #1E7E34 100%);
+        }
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.9);
+        }
+        .procedure-step::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: #046A38;
+            border-radius: 50%;
+            left: -15px;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="gradient-bg text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dbeca756-2aac-4d94-92f2-9a24766bf1b1.png" alt="Logo Al-Barakah Travel dengan tulisan arab berwarna emas" class="h-12 mr-3">
+                <h1 class="text-xl font-bold">ARIF TRAVEL</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-yellow-200 transition">Beranda</a>
+                <a href="#packages" class="hover:text-yellow-200 transition">Paket</a>
+                <a href="#about" class="hover:text-yellow-200 transition">Tentang Kami</a>
+                <a href="#testimonials" class="hover:text-yellow-200 transition">Testimoni</a>
+                <a href="#contact" class="hover:text-yellow-200 transition">Kontak</a>
+            </nav>
+            <button class="md:hidden text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center text-white overflow-hidden">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1dc81d0b-c504-4c05-a0a2-cdcacbbde66c.png" alt="Pemandangan Masjidil Haram di Mekah dengan jamaah yang sedang tawaf di siang hari" class="absolute w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="container mx-auto px-4 z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Perjalanan Umroh Penuh Barakah</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Nikmat kemudahan dan kenyamanan beribadah umroh bersama travel terpercaya sejak 2010</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#packages" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Pilih Paket</a>
+                <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Konsultasi Gratis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistik -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="p-4">
+                <p class="text-green-700 text-4xl font-bold">13+</p>
+                <p class="text-gray-600">Tahun Pengalaman</p>
+            </div>
+            <div class="p-4">
+                <p class="text-green-700 text-4xl font-bold">5,200+</p>
+                <p class="text-gray-600">Jamaah Umroh</p>
+            </div>
+            <div class="p-4">
+                <p class="text-green-700 text-4xl font-bold">98%</p>
+                <p class="text-gray-600">Kepuasan Jamaah</p>
+            </div>
+            <div class="p-4">
+                <p class="text-green-700 text-4xl font-bold">24/7</p>
+                <p class="text-gray-600">Layanan Darurat</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paket Umroh -->
+    <section id="packages" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Paket Umroh Pilihan</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Berbagai pilihan paket umroh dengan fasilitas lengkap sesuai kebutuhan Anda</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Paket 1 -->
+                <div class="package-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/16ab0f44-8162-48d0-b1a1-3655aa4507fa.png" alt="Paket Ekonomi Umroh dengan gambar Masjid Nabawi di Madinah" class="w-full h-48 object-cover">
+                        <div class="absolute top-0 right-0 bg-yellow-500 text-white px-3 py-1 font-bold">9 Hari</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Umroh Ekonomi</h3>
+                        <p class="text-yellow-600 font-bold text-2xl mb-4">Rp 28.500.000</p>
+                        <ul class="mb-6 space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Maskapai kelas ekonomi</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Hotel bintang 3 dekat masjid</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Makan 3x sehari</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Ziarah di Makkah & Madinah</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300" onclick="openBookingModal('Umroh Ekonomi', 'Rp 28.500.000', '9 Hari')">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Paket 2 -->
+                <div class="package-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300 transform scale-105 z-10">
+                    <div class="relative">
+                        <div class="absolute top-0 left-0 w-full bg-yellow-500 text-center text-white font-bold py-1">POPULER</div>
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f0dab7c5-63f2-4126-8284-9c2819cd6009.png" alt="Paket Reguler Umroh dengan gambar Ka'bah di tengah Masjidil Haram" class="w-full h-48 object-cover">
+                        <div class="absolute top-10 right-0 bg-yellow-500 text-white px-3 py-1 font-bold">12 Hari</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Umroh Reguler</h3>
+                        <p class="text-yellow-600 font-bold text-2xl mb-4">Rp 35.900.000</p>
+                        <ul class="mb-6 space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Maskapai kelas ekonomi premium</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Hotel bintang 4 di ring 1</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Makan 3x sehari buffet</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Ziarah lengkap + Jabal Uhud</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Manasik pra-keberangkatan</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded transition duration-300" onclick="openBookingModal('Umroh Reguler', 'Rp 35.900.000', '12 Hari')">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Paket 3 -->
+                <div class="package-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9ac8e272-2501-44b3-b769-c51da910c14e.png" alt="Paket VIP Umroh dengan gambar interior mewah kamar hotel dekat masjid" class="w-full h-48 object-cover">
+                        <div class="absolute top-0 right-0 bg-yellow-500 text-white px-3 py-1 font-bold">12 Hari</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Umroh VIP</h3>
+                        <p class="text-yellow-600 font-bold text-2xl mb-4">Rp 42.500.000</p>
+                        <ul class="mb-6 space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Maskapai kelas bisnis</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Hotel bintang 5 ring 1</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Makan prasmanan premium</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Ziarah eksklusif</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Guide berpengalaman</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Transportasi khusus</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300" onclick="openBookingModal('Umroh VIP', 'Rp 42.500.000', '12 Hari')">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-bold py-2 px-6 rounded-full transition duration-300 flex items-center mx-auto">
+                    Lihat Semua Paket
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fasilitas -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Fasilitas Unggulan Kami</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Akomodasi Premium</h3>
+                    <p class="text-gray-600">Hotel pilihan dengan lokasi strategis dekat Masjidil Haram dan Masjid Nabawi untuk kenyamanan ibadah Anda.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Katering Berkualitas</h3>
+                    <p class="text-gray-600">Menu makanan halal, lezat dan bernutrisi yang disajikan selama perjalanan ibadah umroh Anda.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Pembimbing Profesional</h3>
+                    <p class="text-gray-600">Dibimbing oleh pembimbing umroh yang bersertifikat, berpengalaman dan memahami kebutuhan jamaah Indonesia.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Transportasi Eksklusif</h3>
+                    <p class="text-gray-600">Armada transportasi khusus yang nyaman dan siap mengantar jamaah ke berbagai lokasi ziarah.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Layanan 24 Jam</h3>
+                    <p class="text-gray-600">Tim kami siap membantu Anda kapan saja selama perjalanan umroh, 24 jam sehari.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-book-quran"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Manasik Lengkap</h3>
+                    <p class="text-gray-600">Pelatihan manasik umroh sebelum keberangkatan agar ibadah Anda lebih khusyuk dan sempurna.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prosedur Umroh -->
+    <section id="procedure" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Prosedur Pendaftaran</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Proses pendaftaran yang mudah dan transparan untuk perjalanan umroh Anda</p>
+            
+            <div class="max-w-4xl mx-auto relative">
+                <div class="absolute left-1/2 h-full w-1 bg-green-200 transform -translate-x-1/2 hidden md:block"></div>
+                
+                <!-- Step 1 -->
+                <div class="mb-8 md:flex justify-between items-center">
+                    <div class="md:w-5/12 order-1 md:order-none text-right md:pr-8 mb-4 md:mb-0">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">Pendaftaran</h3>
+                        <p class="text-gray-600">Isi formulir pendaftaran online atau datang langsung ke kantor kami untuk konsultasi dengan tim profesional.</p>
+                    </div>
+                    <div class="md:w-2/12 order-2 flex justify-center">
+                        <div class="relative">
+                            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white text-xl font-bold">1</div>
+                        </div>
+                    </div>
+                    <div class="md:w-5/12 order-3"></div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="mb-8 md:flex justify-between items-center">
+                    <div class="md:w-5/12 order-1"></div>
+                    <div class="md:w-2/12 order-2 flex justify-center">
+                        <div class="relative">
+                            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white text-xl font-bold">2</div>
+                        </div>
+                    </div>
+                    <div class="md:w-5/12 order-3 md:order-none text-left md:pl-8 mb-4 md:mb-0">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">Pembayaran DP</h3>
+                        <p class="text-gray-600">Lakukan pembayaran uang muka (DP) sebesar Rp 5.000.000 untuk mengamankan seat keberangkatan Anda.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="mb-8 md:flex justify-between items-center">
+                    <div class="md:w-5/12 order-1 md:order-none text-right md:pr-8 mb-4 md:mb-0">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">Manasik</h3>
+                        <p class="text-gray-600">Ikuti pelatihan manasik umroh gratis yang diadakan untuk mempersiapkan ibadah Anda.</p>
+                    </div>
+                    <div class="md:w-2/12 order-2 flex justify-center">
+                        <div class="relative">
+                            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white text-xl font-bold">3</div>
+                        </div>
+                    </div>
+                    <div class="md:w-5/12 order-3"></div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="mb-8 md:flex justify-between items-center">
+                    <div class="md:w-5/12 order-1"></div>
+                    <div class="md:w-2/12 order-2 flex justify-center">
+                        <div class="relative">
+                            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white text-xl font-bold">4</div>
+                        </div>
+                    </div>
+                    <div class="md:w-5/12 order-3 md:order-none text-left md:pl-8 mb-4 md:mb-0">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">Pelunasan</h3>
+                        <p class="text-gray-600">Lakukan pelunasan biaya umroh sesuai dengan jatuh tempo yang telah ditentukan.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 5 -->
+                <div class="md:flex justify-between items-center">
+                    <div class="md:w-5/12 order-1 md:order-none text-right md:pr-8 mb-4 md:mb-0">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">Keberangkatan</h3>
+                        <p class="text-gray-600">Tiba di bandara sesuai jadwal untuk melakukan penerbangan menuju Tanah Suci bersama rombongan.</p>
+                    </div>
+                    <div class="md:w-2/12 order-2 flex justify-center">
+                        <div class="relative">
+                            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white text-xl font-bold">5</div>
+                        </div>
+                    </div>
+                    <div class="md:w-5/12 order-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Apa Kata Jamaah Kami</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Pengalaman nyata dari para jamaah yang telah berangkat umroh bersama kami</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimoni 1 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5d104b60-c00f-4ff0-a107-663a16f82682.png" alt="Potret Bapak Ahmad, jamaah umroh dengan ekspresi senang mengenakan ihram" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Bpk. Ahmad</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Alhamdulillah perjalanan umroh sangat nyaman. Hotel dekat masjid, makanannya enak, pembimbingnya sabar membimbing kami beribadah. Tahun depan insya Allah mau berangkat lagi."</p>
+                </div>
+                
+                <!-- Testimoni 2 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/34160876-7529-4fef-93a3-9140eebb10d7.png" alt="Potret Ibu Siti, jamaah wanita dengan kerudung putih sedang berdoa di depan Ka'bah" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ibu Siti</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Saya sebagai jamaah wanita merasa sangat aman dan nyaman. Pembimbing khusus wanita selalu siap membantu, terutama saat thawaf dan sa'i. Transportasi juga tepat waktu sehingga tidak perlu menunggu lama."</p>
+                </div>
+                
+                <!-- Testimoni 3 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/19f03d37-3688-4b15-86ae-e3e69dd9aac2.png" alt="Potret Keluarga Tn. Budi dengan istri dan dua anak sedang berfoto di depan Masjid Nabawi" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Tn. Budi & Keluarga</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Pertama kali umroh sekeluarga, Alhamdulillah semua berjalan lancar. Anak-anak kami juga merasa nyaman. Kemarin dapat kamar keluarga yang luas dan bersih. Kateringnya juga banyak pilihan untuk anak-anak."</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-bold py-2 px-6 rounded-full transition duration-300 flex items-center mx-auto">
+                    Lihat Lebih Banyak
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Siap Memulai Perjalanan Ibadah Anda?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Tim kami siap membantu mewujudkan impian umroh Anda dengan pelayanan terbaik dan profesional.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/6281212399614" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 flex items-center justify-center">
+                    <i class="fab fa-whatsapp text-xl mr-2"></i> Hubungi via WhatsApp
+                </a>
+                <a href="tel:+622112345678" class="bg-white hover:bg-gray-100 text-gray-900 font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 flex items-center justify-center">
+                    <i class="fas fa-phone-alt mr-2"></i> Telepon Kami
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Tentang Kami -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Tentang Kami</h3>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/12c92a5e-2948-44fc-bf92-705e143ab2dc.png" alt="Logo besar Al-Barakah Travel dengan kaligrafi arab berwarna emas" class="h-10 mb-4">
+                    <p class="text-gray-400">Al-Barakah Travel telah mengantarkan ribuan jamaah umroh sejak 2010 dengan pelayanan prima dan profesional.</p>
+                </div>
+                
+                <!-- Link Cepat -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Link Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-yellow-400 transition">Beranda</a></li>
+                        <li><a href="#packages" class="text-gray-400 hover:text-yellow-400 transition">Paket Umroh</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-yellow-400 transition">Testimoni</a></li>
+                        <li><a href="#procedure" class="text-gray-400 hover:text-yellow-400 transition">Prosedur</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-yellow-400 transition">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Kontak -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kontak Kami</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-yellow-400"></i>
+                            <span>Jl. Haji Agus Salim No. 123, Jakarta Pusat, Indonesia</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-yellow-400"></i>
+                            <span>+62 21 1234 5678</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fab fa-whatsapp mt-1 mr-3 text-yellow-400"></i>
+                            <span>+62 812 3456 7890</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-yellow-400"></i>
+                            <span>info@albarakahtravel.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Jam Operasional -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Jam Operasional</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex justify-between">
+                            <span>Senin-Jumat:</span>
+                            <span>08.00 - 17.00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Sabtu:</span>
+                            <span>09.00 - 15.00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Minggu:</span>
+                            <span>Libur</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-6">
+                        <h4 class="font-bold mb-2">Ikuti Kami</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-yellow-400 transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-yellow-400 transition"><i class="fab fa-instagram text-xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-yellow-400 transition"><i class="fab fa-youtube text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400">
+                <p>© 2023 Al-Barakah Travel. Semua Hak Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Booking -->
+    <div id="bookingModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-6 w-full max-w-md">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold">Formulir Pemesanan</h3>
+                <button onclick="closeBookingModal()" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="mb-4">
+                <p class="font-semibold">Paket: <span id="modal-package-name" class="text-green-600"></span></p>
+                <p class="font-semibold">Harga: <span id="modal-package-price" class="text-green-600"></span></p>
+                <p class="font-semibold">Durasi: <span id="modal-package-duration" class="text-green-600"></span></p>
+            </div>
+            <form id="bookingForm" class="space-y-4">
+                <div>
+                    <label for="name" class="block mb-1">Nama Lengkap</label>
+                    <input type="text" id="name" class="w-full border border-gray-300 rounded px-3 py-2" required>
+                </div>
+                <div>
+                    <label for="email" class="block mb-1">Email</label>
+                    <input type="email" id="email" class="w-full border border-gray-300 rounded px-3 py-2" required>
+                </div>
+                <div>
+                    <label for="phone" class="block mb-1">Nomor Telepon</label>
+                    <input type="tel" id="phone" class="w-full border border-gray-300 rounded px-3 py-2" required>
+                </div>
+                <div>
+                    <label for="participants" class="block mb-1">Jumlah Peserta</label>
+                    <input type="number" id="participants" min="1" class="w-full border border-gray-300 rounded px-3 py-2" required>
+                </div>
+                <div>
+                    <label for="departure_date" class="block mb-1">Tanggal Keberangkatan</label>
+                    <input type="date" id="departure_date" class="w-full border border-gray-300 rounded px-3 py-2" required>
+                </div>
+                <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                    Kirim Pesanan
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Booking Modal Functions
+        function openBookingModal(packageName, packagePrice, packageDuration) {
+            document.getElementById('modal-package-name').textContent = packageName;
+            document.getElementById('modal-package-price').textContent = packagePrice;
+            document.getElementById('modal-package-duration').textContent = packageDuration;
+            document.getElementById('bookingModal').classList.remove('hidden');
+        }
+
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.add('hidden');
+        }
+
+        // Form Submission
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const formData = {
+                package: document.getElementById('modal-package-name').textContent,
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                participants: document.getElementById('participants').value,
+                departure_date: document.getElementById('departure_date').value
+            };
+
+            // Here you would typically send the data to your backend
+            console.log('Form submitted:', formData);
+            
+            // Show success message
+            alert('Pemesanan berhasil dikirim! Tim kami akan segera menghubungi Anda.');
+            closeBookingModal();
+            document.getElementById('bookingForm').reset();
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.md\\:hidden');
+        const mobileMenu = document.querySelector('nav');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            mobileMenu.classList.toggle('flex-col');
+            mobileMenu.classList.toggle('absolute');
+            mobileMenu.classList.toggle('top-16');
+            mobileMenu.classList.toggle('right-4');
+            mobileMenu.classList.toggle('bg-green-800');
+            mobileMenu.classList.toggle('p-4');
+            mobileMenu.classList.toggle('rounded-lg');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
